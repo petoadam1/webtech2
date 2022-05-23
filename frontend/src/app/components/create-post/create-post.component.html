@@ -1,0 +1,27 @@
+<button (click)="isOpen = !isOpen" mat-raised-button>
+  <mat-icon>hozzáad</mat-icon>Post készítés
+</button>
+
+<form
+    *ngIf="isOpen"
+    [formGroup]="form"
+    #formDirective="ngForm"
+    (ngSubmit)="onSubmit(form.value)"
+    novalidate
+  >
+    <mat-form-field>
+      <mat-label>Post Cím</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Post Törzs</mat-label>
+      <input matInput formControlName="body" />
+    </mat-form-field>
+    <button
+      [disabled]="!form.valid"
+      mat-raised-button
+      type="submit"
+    >
+      <span>Post</span>
+    </button>
+</form>

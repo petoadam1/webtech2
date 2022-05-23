@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+mat-card {
+  font-family: 'Macondo', cursive;
+    margin-bottom: 1em;
+    font-size: 24px;
+    button {
+      float: right;
+    }
+    .post-title {
+      font-weight: bold;
+    }
+    .post-meta {
+      font-size: 16px;
+      font-style: italic;
+    }
+    .post-body {
+      margin-top: 1em;
+    }
+  }

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+mat-toolbar {
+    font-family: 'Macondo', cursive;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+    background-color: grey;
+    a {
+        text-decoration: none;
+        color: white;
+        &.active-link {
+            color: lightyellow;
+        }
+
+        span {
+            margin-left: 24px;
+        }
+    }
+}
